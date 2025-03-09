@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور قبل وبعد التعديل</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .gallery {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto; /* لجعل المربع في الوسط */
+        }
+
+        .gallery h3 {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .grid img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(1, 1fr); /* يجعل الصور تظهر تحت بعض في الجوال */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>لقطات شاشة بعد التعديل وقبل التعديل</h2>
+
+    <div class="gallery">
+        <h3>قبل التعديل </h3>
+        <div class="grid">
+            <img src="Screenshots/الرئيسية.png" alt="الرئيسية">
+            <img src="Screenshots/من نحن.png" alt="من نحن">
+            <img src="Screenshots/الحزم والعروض.png" alt="الحزم والعروض">
+            <img src="Screenshots/منتجعاتنا للغولف.png" alt="منتجعاتنا للغولف">
+            <img src="Screenshots/الفنادق.png" alt="الفنادق">
+            <img src="Screenshots/الملاعب.png" alt="الملاعب">
+            <img src="Screenshots/النادي.png" alt="النادي">
+            <img src="Screenshots/المطاعم والمقاهي.png" alt="المطاعم والمقاهي">
+            <img src="Screenshots/المتجر.png" alt="المتجر">
+            <img src="Screenshots/تواصل معنا.png" alt="تواصل معنا">
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h3>بعد التعديل</h3>
+        <div class="grid">
+            <img src="Screenshots/الرئيسية معدل.png" alt="الرئيسية">
+            <img src="Screenshots/من نحن معدل.png" alt="من نحن">
+            <img src="Screenshots/الحزم والعروض معدل.png" alt="الحزم والعروض">
+            <img src="Screenshots/منتجعاتنا للغولف معدل.png" alt="منتجعاتنا للغولف">
+            <img src="Screenshots/الفنادق معدل.png" alt="الفنادق">
+            <img src="Screenshots/الملاعب معدل.png" alt="الملاعب">
+            <img src="Screenshots/النادي معدل.png" alt="النادي">
+            <img src="Screenshots/المطاعم والمقاهي معدل.png" alt="المطاعم والمقاهي">
+            <img src="Screenshots/المتجر معدل.png" alt="المتجر">
+            <img src="Screenshots/تواصل معنا معدل.png" alt="تواصل معنا">
+        </div>
+    </div>
+
+</body>
+</html>
